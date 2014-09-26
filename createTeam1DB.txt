@@ -1,0 +1,42 @@
+CREATE DATABASE Team1
+
+CREATE TABLE Users (
+	user_id  NUMBER(6)  NOT NULL PRIMARY KEY,
+	employee_id  VARCHAR2(10),
+	first_name  VARCHAR2(20),
+	last_name  VARCHAR2(25),
+	email  VARCHAR2(25),
+	password  VARCHAR2(20) 
+	--perhaps use ENCRYPT function on password down the line
+
+	)
+
+CREATE TABLE Currencies (
+	currency_id   NUMBER(3)  NOT NULL PRIMARY KEY,
+	currency_acronym  VARCHAR2(3),
+	currency_full_name  VARCHAR2(25),
+	last_name  VARCHAR2(25),
+	currency_region  VARCHAR(25)
+
+	)
+
+CREATE TABLE Transactions (
+	transaction_id NUMBER(5) NOT NULL PRIMARY KEY,
+	user_id  NUMBER(6) NOT NULL FOREIGN KEY,
+	transaction_date DATE,
+	base_currency_id NUMBER(3) NOT NULL FOREIGN KEY,
+	quote_currency_id NUMBER(3) NOT NULL FOREIGN KEY,
+	transaction_amount NUMBER(20),
+	transaction_operation VARCHAR2(4), --buy or sell
+	rate_id NUMBER(3) NOT NULL FOREIGN KEY
+
+)
+
+CREATE TABLE Rates (
+	rate_id  NUMBER(3)  NOT NULL  PRIMARY KEY,
+	base_currency_id NUMBER(3) NOT NULL FOREIGN KEY,
+	quote_currency_id NUMBER(3) NOT NULL FOREIGN KEY,
+	buy_rate_value  NUMBER(10, 4),
+	sell_rate_value  NUMBER(10, 4)
+
+)
