@@ -13,47 +13,93 @@
 </head>
 
 <body>
-
 <header>
-<image src="images/rbs-logo.gif" class="logo"/>
- <nav>
-<ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="order.html">Order</a></li>
-  <li><a href="history.html">History</a></li>
-</ul>
-</nav>
+  <image src="images/rbs-logo.gif" class="logo"/>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="order.html">Order</a></li>
+      <li><a href="history.html">History</a></li> |
+      <li><a href="#">logout</a></li>
+    </ul>
+  </nav>
 </header>
-
-
-
 <article>
-
-<h1 class="page_title">Welcome</h1>
-
-<aside>
-<h2>Left Side</h2>
-<p>Bacon ipsum dolor sit amet meatball turducken pancetta frankfurter. Tenderloin ground round prosciutto spare ribs pastrami t-bone turducken pig cow tail. Ribeye turkey biltong sirloin turducken. Corned beef beef pastrami pork chop porchetta ham. Salami frankfurter turducken sirloin. Beef turkey corned beef prosciutto porchetta. Brisket andouille sausage swine shankle jowl beef ribs kielbasa turkey meatball.</p>
-</aside>
-
-<section class="right_width">
-<h2>Right Content</h2>
-<p>Bacon ipsum dolor sit amet meatball turducken pancetta frankfurter. Tenderloin ground round prosciutto spare ribs pastrami t-bone turducken pig cow tail. Ribeye turkey biltong sirloin turducken. Corned beef beef pastrami pork chop porchetta ham. Salami frankfurter turducken sirloin. Beef turkey corned beef prosciutto porchetta. Brisket andouille sausage swine shankle jowl beef ribs kielbasa turkey meatball.</p>
-<p>Bacon ipsum dolor sit amet meatball turducken pancetta frankfurter. Tenderloin ground round prosciutto spare ribs pastrami t-bone turducken pig cow tail. Ribeye turkey biltong sirloin turducken. Corned beef beef pastrami pork chop porchetta ham. Salami frankfurter turducken sirloin. Beef turkey corned beef prosciutto porchetta. Brisket andouille sausage swine shankle jowl beef ribs kielbasa turkey meatball.</p>
-<p>Bacon ipsum dolor sit amet meatball turducken pancetta frankfurter. Tenderloin ground round prosciutto spare ribs pastrami t-bone turducken pig cow tail. Ribeye turkey biltong sirloin turducken. Corned beef beef pastrami pork chop porchetta ham. Salami frankfurter turducken sirloin. Beef turkey corned beef prosciutto porchetta. Brisket andouille sausage swine shankle jowl beef ribs kielbasa turkey meatball.</p>
-</section>
-
-<section>
-<h2>Full Content</h2>
-<p>Bacon ipsum dolor sit amet meatball turducken pancetta frankfurter. Tenderloin ground round prosciutto spare ribs pastrami t-bone turducken pig cow tail. Ribeye turkey biltong sirloin turducken. Corned beef beef pastrami pork chop porchetta ham. Salami frankfurter turducken sirloin. Beef turkey corned beef prosciutto porchetta. Brisket andouille sausage swine shankle jowl beef ribs kielbasa turkey meatball.</p>
-</section>
+  <h1 class="page_title">Welcome</h1>
+  <aside>
+    <h2>Transactions</h2>
+    <ul>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <li>Thu Jul 31 02:06:33 CDT 2014 SELL:GBP/USD:38</li>
+    <div class="clear"></div>
+    <a href="history.html" class="button">View All Order History</a>
+    </ul>
+  </aside>
+  <section class="right_width">
+    <h2>Dashboard</h2>
+    <p>View currency:</p>
+    <select class="currency">
+        <option value="USD">US Dollar (USD)</option>
+        <option value="GBP">Great British Pound (GBP)</option>
+        <option value="CAD">Canadian Dollar (CAD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+        <option value="SEK">Swedish Krona (SEK)</option>
+        <option value="CHF">Swiss Franc (CHF)</option>
+   </select> 
+   
+   <table border="0" id="currency_table">
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">BID</th>
+    <th scope="col">OFFER</th>
+  </tr>
+  <tr>
+    <th scope="row">USD</th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">CAD</th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">EUR</th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">JPY</th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">SEK</th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">CHF</th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+</table>
 <div class="clear"></div>
+<a href="order.html" class="button">View All Order History</a>
+  </section>
+  <div class="clear"></div>
 </article>
-
-<footer>
-<a href="#">logout</a>
-<div class="clear"></div>
+<footer> 
+  <div class="clear"></div>
 </footer>
-
 </body>
 </html>

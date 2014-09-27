@@ -36,8 +36,15 @@ nav ul li {
 }
 aside{
 	float:left; 
-	width:25%;
+	width:24%;
 	display:block;
+	border:1px solid grey;
+	-webkit-box-shadow: 1px 1px 1px 1px #949494;
+	box-shadow: 1px 1px 1px 1px #949494;
+	display:block;
+	float:left;
+	padding:15px 10px;
+	height:100%;
 }
 section{
 	display:block;
@@ -51,6 +58,15 @@ h1{
 }
 .right_width{
 	max-width:69%;
+	min-width:69%;
+	border:1px solid grey;
+	-webkit-box-shadow: 1px 1px 1px 1px #949494;
+	box-shadow: 1px 1px 1px 1px #949494;
+	display:block;
+	float:left;
+	padding:15px 10px;
+	height:282px;
+	height:100%;
 }
 .logo{
 	margin: 6px 10px;
@@ -120,4 +136,66 @@ input[type=submit]:hover{
 	-moz-transition:.5s;
 	-webkit-transition:.5s;
 	transition:.5s;
+}
+aside ul, aside ul li{
+	list-style:none;
+	padding:0px!important;	
+	margin:0;
+}
+aside ul li{
+	margin-bottom:8px;	
+}
+a.button{
+	float:none;
+	margin-top:20px;
+	border:0;
+	color:#fff;
+	font-weight:bold;
+	background:#0d2c40!important;
+	padding:5px 8px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+	border-radius: 2px 2px 2px 2px;
+	cursor:pointer;
+	text-decoration:none;
+	display:block;
+		-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+a.button:hover{
+	background:red;
+}
+aside a.button{
+	width:70%;
+}
+section.right_width a.button{
+	width:25%;
+}
+table#currency_table{
+	margin:0 auto;
+}
+table#currency_table tr td{
+	padding:6px 12px;	
+}
+select.currency{
+	border:1px solid grey;	
+	margin-left:30%;
+	margin-bottom:30px;
+}
+.history_heading{
+	padding-right:16%;	
+}
+.history_list{
+	padding-right:14%;	
+}
+#purchase_history{
+	height:400px;
+	width:800px;
+	border:1px solid #ccc;
+	overflow:auto;	
+}
+section.centered{
+	margin-left:10%;	
 }
