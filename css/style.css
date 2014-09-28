@@ -90,7 +90,7 @@ nav a, footer a{
 	text-decoration:none;
 }
 nav a:hover, footer a:hover{
-	color:red;
+	color:#003480;
 }
 .login, .register{
 	border:1px solid grey;
@@ -122,7 +122,7 @@ input[type=submit]{
 	border:0;
 	color:#fff;
 	font-weight:bold;
-	background:#0d2c40;
+	background:#003480;
 	padding:5px 8px;
 	-webkit-border-radius: 2px 2px 2px 2px;
 	border-radius: 2px 2px 2px 2px;
@@ -130,7 +130,7 @@ input[type=submit]{
 	width:20%;
 }
 input[type=submit]:hover{
-	background:red;
+	background:#0582b6;
 	-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
@@ -151,24 +151,34 @@ a.button{
 	border:0;
 	color:#fff;
 	font-weight:bold;
-	background:#0d2c40!important;
+	background:#003480;
 	padding:5px 8px;
 	-webkit-border-radius: 2px 2px 2px 2px;
 	border-radius: 2px 2px 2px 2px;
 	cursor:pointer;
 	text-decoration:none;
 	display:block;
-		-o-transition:.5s;
+	text-align:center;
+			-o-transition:.5s;
 	-ms-transition:.5s;
 	-moz-transition:.5s;
 	-webkit-transition:.5s;
 	transition:.5s;
 }
 a.button:hover{
-	background:red;
+	background:#0582b6;
+		-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
 }
 aside a.button{
 	width:70%;
+}
+section a.button{
+	width:30%;
+	
 }
 section.right_width a.button{
 	width:25%;
@@ -177,12 +187,16 @@ table#currency_table{
 	margin:0 auto;
 }
 table#currency_table tr td{
-	padding:6px 12px;	
+	padding:12px 18px;	
+	border:1px solid grey;
+	margin:0px;
 }
+
 select.currency{
 	border:1px solid grey;	
-	margin-left:30%;
+	margin-left:10%;
 	margin-bottom:30px;
+	display:inline-block;
 }
 .history_heading{
 	padding-right:16%;	
@@ -198,4 +212,22 @@ select.currency{
 }
 section.centered{
 	margin-left:10%;	
+}
+input.small{
+	width:80px;;
+	display:inline-block;
+	float:none;	
+}
+.center{
+	margin:0 auto;
+	text-align:center;	
+}
+section.half{
+	width:44%;
+}
+a.place_order{
+	margin:0 auto;	
+}
+input, select{
+border: 1px solid #808080;
 }

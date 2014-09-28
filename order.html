@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Login</title>
+<title>Order</title>
 <meta charset="utf-8">
 <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 <!--[if lt IE 9]>
@@ -21,7 +21,7 @@
   <li><a href="index.html">Home</a></li>
   <li><a href="order.html">Order</a></li>
   <li><a href="history.html">History</a></li> |
-  <li><a href="#">logout</a></li>
+  <li><a href="#">Logout</a></li>
 </ul>
 </nav>
 </header>
@@ -32,13 +32,85 @@
 
 <h1 class="page_title">Order</h1>
 
-<section>
-<h2>Full Content</h2>
-<p>Bacon ipsum dolor sit amet meatball turducken pancetta frankfurter. Tenderloin ground round prosciutto spare ribs pastrami t-bone turducken pig cow tail. Ribeye turkey biltong sirloin turducken. Corned beef beef pastrami pork chop porchetta ham. Salami frankfurter turducken sirloin. Beef turkey corned beef prosciutto porchetta. Brisket andouille sausage swine shankle jowl beef ribs kielbasa turkey meatball.</p>
-<p>Bacon ipsum dolor sit amet meatball turducken pancetta frankfurter. Tenderloin ground round prosciutto spare ribs pastrami t-bone turducken pig cow tail. Ribeye turkey biltong sirloin turducken. Corned beef beef pastrami pork chop porchetta ham. Salami frankfurter turducken sirloin. Beef turkey corned beef prosciutto porchetta. Brisket andouille sausage swine shankle jowl beef ribs kielbasa turkey meatball.</p>
-<p>Bacon ipsum dolor sit amet meatball turducken pancetta frankfurter. Tenderloin ground round prosciutto spare ribs pastrami t-bone turducken pig cow tail. Ribeye turkey biltong sirloin turducken. Corned beef beef pastrami pork chop porchetta ham. Salami frankfurter turducken sirloin. Beef turkey corned beef prosciutto porchetta. Brisket andouille sausage swine shankle jowl beef ribs kielbasa turkey meatball.</p>
+
+
+<section class="half">
+    <p>Base currency:
+    <select class="currency">
+        <option value="USD">US Dollar (USD)</option>
+        <option value="GBP">Great British Pound (GBP)</option>
+        <option value="CAD">Canadian Dollar (CAD)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+        <option value="SEK">Swedish Krona (SEK)</option>
+        <option value="CHF">Swiss Franc (CHF)</option>
+   </select> </p>
+   
+<table border="0" id="currency_table">
+  <tr>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">&nbsp;</th>
+    <th scope="col">BID</th>
+    <th scope="col">OFFER</th>
+  </tr>
+  <tr>
+    <th scope="row">USD</th>
+    <th scope="row"><input type="radio" name="currency" value="USD"></th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">CAD</th>
+     <th scope="row"><input type="radio" name="currency" value="CAD"></th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">EUR</th>
+     <th scope="row"><input type="radio" name="currency" value="EUR"></th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">JPY</th>
+     <th scope="row"><input type="radio" name="currency" value="JPY"></th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">SEK</th>
+     <th scope="row"><input type="radio" name="currency" value="SEK"></th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+  <tr>
+    <th scope="row">CHF</th>
+     <th scope="row"><input type="radio" name="currency" value="CHF"></th>
+    <td>1.20563</td>
+    <td>1.20563</td>
+  </tr>
+</table>
 </section>
+
+<section class="half">
+<p>Please enter the amount: <input class="small" type="text" name="amount"></p>
+<div class="center">
+<p>
+<select class="buy_sell">
+<option value="default" selected>--Please Select--</option>
+    <option value="BUY">Buy</option>
+    <option value="SELL">Sell</option>
+    
+</select> 
+@ 1.20563</p>
+</div>
+<a href="#" class="button place_order">Place Order</a>
+</section>
+
+
 <div class="clear"></div>
+
+
 </article>
 
 <footer>
