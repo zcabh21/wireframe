@@ -141,6 +141,11 @@ aside ul, aside ul li{
 	list-style:none;
 	padding:0px!important;	
 	margin:0;
+	font-weight: bold
+	background: white;
+}
+aside li:nth-child(odd) {
+	background: gray;
 }
 aside ul li{
 	margin-bottom:8px;	
@@ -203,13 +208,16 @@ select.currency{
 }
 .history_list{
 	padding-right:14%;	
+	padding-left: 5px;
 }
 #purchase_history{
 	height:400px;
 	width:800px;
 	border:1px solid #ccc;
 	overflow:auto;	
+	background: white;
 }
+
 section.centered{
 	margin-left:10%;	
 }
