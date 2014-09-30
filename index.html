@@ -14,13 +14,21 @@
 
 <body>
 <script>
-function makeOrder() {
+function makeOrderBuy() {
       var x;
-      var name=prompt("Enter amount of shares","");
+      var name=prompt("Enter amount of shares:","");
       if (name!=null){
-       x="Bought/sold " + name + " shares";
+       x="Bought " + name + " shares";
       alert(x);
-    }
+      }
+}
+function makeOrderSell() {
+      var x;
+      var name=prompt("Enter amount of shares:","");
+      if (name!=null){
+       x="Sold " + name + " shares";
+      alert(x);
+      }
 }
 </script>
 
@@ -75,33 +83,33 @@ function makeOrder() {
   </tr>
   <tr>
     <th scope="row">USD</th>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrderBuy()">1.20563</button></td>
+    <td><button onClick = "makeOrderSell()">1.20563</button></td>
   </tr>
   <tr>v
     <th scope="row">CAD</th>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrderBuy()">1.20563</button></td>
+    <td><button onClick = "makeOrderSell()">1.20563</button></td>
   </tr>
   <tr>
     <th scope="row">EUR</th>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrderBuy()">1.20563</button></td>
+    <td><button onClick = "makeOrderSell()">1.20563</button></td>
   </tr>
   <tr>
     <th scope="row">JPY</th>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrderBuy()">1.20563</button></td>
+    <td><button onClick = "makeOrderSell()">1.20563</button></td>
   </tr>
   <tr>
     <th scope="row">SEK</th>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrderBuy()">1.20563</button></td>
+    <td><button onClick = "makeOrderSell()">1.20563</button></td>
   </tr>
   <tr>
     <th scope="row">CHF</th>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
-    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrderBuy()">1.20563</button></td>
+    <td><button onClick = "makeOrderSell()">1.20563</button></td>
   </tr>
 </table>
 <div class="clear"></div>
