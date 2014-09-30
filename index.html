@@ -13,7 +13,16 @@
 </head>
 
 <body>
-
+<script>
+function makeOrder() {
+      var x;
+      var name=prompt("Enter amount of shares","");
+      if (name!=null){
+       x="Bought/sold " + name + " shares";
+      alert(x);
+    }
+}
+</script>
 
 <header>
   <image src="images/rbs-logo.gif" class="logo"/>
@@ -66,33 +75,33 @@
   </tr>
   <tr>
     <th scope="row">USD</th>
-    <td>1.20563</td>
-    <td>1.20563</td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
   </tr>
-  <tr>
+  <tr>v
     <th scope="row">CAD</th>
-    <td>1.20563</td>
-    <td>1.20563</td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
   </tr>
   <tr>
     <th scope="row">EUR</th>
-    <td>1.20563</td>
-    <td>1.20563</td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
   </tr>
   <tr>
     <th scope="row">JPY</th>
-    <td>1.20563</td>
-    <td>1.20563</td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
   </tr>
   <tr>
     <th scope="row">SEK</th>
-    <td>1.20563</td>
-    <td>1.20563</td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
   </tr>
   <tr>
     <th scope="row">CHF</th>
-    <td>1.20563</td>
-    <td>1.20563</td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
+    <td><button onClick = "makeOrder()">1.20563</button></td>
   </tr>
 </table>
 <div class="clear"></div>
@@ -103,5 +112,8 @@
 <footer> 
   <div class="clear"></div>
 </footer>
+
+
+
 </body>
 </html>
